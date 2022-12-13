@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block tabel %}
+<h1>Tabel Barang</h1>
+<table border="1" class="table table-striped table-primary">
+	<tr>
+		<td>Kode brg</td>
+		<td>Nama</td>
+		<td>Stok</td>
+		<td>Harga</td>
+		<td>Link Gambar</td>
+		<td>Jenis</td>
+	</tr>
+
+	{% for Barang in barang %}
+	<tr>
+		<td>{{ Barang.kodebrg}}</td>
+		<td>{{ Barang.nama}}</td>
+		<td>{{ Barang.stok}}</td>
+		<td>{{ Barang.harga}}</td>
+		<td>{{ Barang.link_gbr}}</td>
+		<td>{{ Barang.jenis_id_id}}</td>
+	</tr>
+	{% endfor %}
+
+</table>
+{% endblock %}

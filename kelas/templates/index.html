@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block header %}
+<html>
+<head>
+
+<style type="text/css">
+*{
+box-sizing: border-box;
+}
+body {
+ font-family:britannic bold;
+ padding: 10px; 
+ background:#f1f1f1;
+}
+/* Header/Blog Title */
+.header { 
+ padding: 40px;
+ text-align: center; 
+ background-image: url(mll.jfif);
+}
+header h1 { font-size: 50px;
+}
+/* Style untuk navigation bar */
+.topnav {
+ overflow: hidden; 
+ background-color: black;
+}
+/* Style untuk link di Navbar*/
+.topnav a {
+ float: left;
+ display: block; color:#f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+/* merubah warna hover */
+}
+.topnav a:hover {
+ background-color: #ddd;
+ color: red;
+}
+/* untuk mencreate 2 unequal kolom /
+/* Left column */
+.leftcolumn {
+ float: left; 
+ width: 65%;
+}
+/* Right column */
+.rightcolumn {
+ float: left; 
+ width: 20%;
+ background-color: #f1f1f1;
+ padding-left: 20px;
+}
+/*Take Image */
+.fakeimg {
+ width: 100%;
+ padding: 20px;
+}
+/* memberikan effect card pada konten */
+.card {
+ background-color:#dceff1;
+ padding: 20px;
+ margin-top: 20px;
+}
+/* Clear floats setelah columns */
+.row:after {
+ content: "";
+ display : table;
+ clear: both;
+}
+/*fooTer */
+.footer {
+ padding: 20px;
+ text-align: center;
+ background:#06707a;
+ margin-top: 20px;
+ color:#681805;
+}
+/*Membuat responsible layout-ketika screen dibawah 800px maka membuat 2 kolon saling stack satu sama lain*/ 
+@media screen and (max-width: 800px) 
+{ .leftcolumn, .rightcolumn 
+	{
+ width: 100%;
+ padding: 0;
+}
+}
+@media screen and (max-width: 400px) 
+{ .topnav a
+	{
+float: none;
+width: 100%;
+}
+}
+h5{
+background-image:url(a.jpg);
+}
+body{background-color:#3b3a39;}
+div div h2 img {
+border-radius:50%;}
+
+</style>
+<div class="card">
+<h2>GAME SANDA</h2>
+<h5>Malang, 22 januari, 2022</h5> <img src="ns.jpg" style="height: 200px;">
+<p>Some text..</p>
+<p>Hay gais siapa yang suka bermain game?sekarang bisa bergabung dengan saya dengan mengikuti Halaman Facebook saya.Game yang biasa saya mainkan adalah Mobile Legends.Kalian Bisa melihat saya live di facebook.Ini adalah halamannya(Nderogame)<a href="https://www.facebook.com/">facebook</a></p>
+</div>
+<div class="card">
+
+<h2>NDEROGAME</h2>
+
+<h5>Malang, Sep 2, 2017</h5> <img src="nderogame.jpg" style="height: 200px;">
+
+<p>Hallo teman-teman selamat datang di halaman pribadiku.Jangan lupa selalu dukung dan tetap follow my halaman dan semoga kalian betah dengan vidio-vidio liveku.Terima Kasih.</p>
+</div>
+</div>
+
+<div class="rightcolumn">
+
+<div class="card">
+
+<h2>About Me </h2>
+
+<img src="g.jpg" style="height:100px;">
+<p>perkenalkan saya Gaudensius Fartika Sanda, suka bermain game yaitu game mobile legends.Jika ingin tau bisa bergabung dengan halaman Facebook saya(nderogame).</p>
+
+</div>
+
+<div class="card">
+
+<h3>Popular Post</h3>
+
+<img src="vml.jpg"style="height:100px;"><p></p>
+<img src="vml1.jpg"style="height:100px;"><p></p>
+<img src="vml2.jpg"style="height:100px;">
+
+</div>
+</div>
+</div>
+
+
+<div class="card">
+
+<h3>Follow </h3>
+<p>Silakan Follow Halaman saya(Nderogame).</p>
+</div>
+</div>
+<div class="footer">
+<h2><font face="viner hand itc">=APAPUN DIRIMU JADILAH YANG TERBAIK=</font></h2>
+</div>
+</body>
+</html>
+
+
+{% endblock %}

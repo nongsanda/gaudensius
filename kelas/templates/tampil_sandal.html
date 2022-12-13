@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block sandal %}
+<h1>Tabel Barang</h1>
+<table border="1" class="table table-striped table-success">
+	<tr>
+		<td>Nama</td>
+		<td>Stok</td>
+		<td>Harga</td>
+		<td>Waktu Beli</td>
+		<td>Komen</td>
+	</tr>
+
+	{% for Sandal in sandal %}
+	<tr>
+	
+		<td>{{ Sandal.nama}}</td>
+		<td>{{ Sandal.stok}}</td>
+		<td>{{ Sandal.harga}}</td>
+		<td>{{ Sandal.waktu_beli}}</td>
+		<td>{{ Sandal.komen}}</td>
+		
+	</tr>
+	{% endfor %}
+
+</table>
+{% endblock %}
